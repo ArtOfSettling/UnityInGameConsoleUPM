@@ -1,6 +1,6 @@
 {
   "name": "com.phantombit.command",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "displayName": ".Command",
   "description": "A powerful in-game command console and log viewer for Unity. View logs, inspect objects, execute commands, and debug on any platform.",
   "unity": "2021.3",

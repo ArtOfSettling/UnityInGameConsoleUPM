@@ -24,7 +24,7 @@ A powerful runtime command console and in-game inspector for Unity. It works acr
 
 ### Install via UPM
 1. Add a new entry to your manifests.json
-`"com.phantombit.command": "https://github.com/ArtOfSettling/UnityInGameConsole.git?path=unity/Packages/com.phantombit.command#v1.0.0"`
+`"com.phantombit.command": "https://github.com/ArtOfSettling/UnityInGameConsoleUPM.git#v0.1.1"`
 2. Drag the `Packages/com.phantombit.command/Runtime/Platform/Prefabs/DebugConsoleLoader.prefab` into any scene and you are done!
 
 ### Install via unity package
@@ -38,66 +38,6 @@ Read more on how to use .command
 2. [Exposing Custom Commands](https://dotcommand-documentation.readthedocs.io/en/latest/learn/step_by_step/custom_commands.html#introduction)
 3. [Adding Custom Log Levels](https://dotcommand-documentation.readthedocs.io/en/latest/learn/step_by_step/logs_and_filters.html#introduction)
 4. [Built in commands](https://dotcommand-documentation.readthedocs.io/en/latest/learn/step_by_step/built_in_commands.html)
-
----
-
-## Dev Environment Setup
-
-If you're contributing or building the Unity package yourself, follow these steps:
-
-### Prerequisites
-
-- Unity (6.1 LTS or newer recommended)
-- Node.js (we recommend using [nvm](https://github.com/nvm-sh/nvm) to install)
-
-```bash
-nvm install --lts
-nvm use --lts
-```
-
-### Install Build Tools
-
-Install Jake (task runner) and CoffeeScript compiler:
-
-```bash
-npm install -g jake coffeescript
-```
-
-> **Note:** Global install is required for CLI commands like `jake` to work in terminal.
-
-### Verify Setup
-
-Run the following to list available tasks:
-
-```bash
-jake -T
-```
-
-To build the Unity `.unitypackage` export:
-
-```bash
-jake unity:export-package -c
-```
-
-This will print a message like:
-
-```
-[INFO] Using unity path: /Applications/Unity/Hub/Editor/...
-```
-
-The built `.unitypackage` will be located under the `unity/` directory.
-
----
-
-## Using the Unity Project
-
-You can also just open the Unity project located at `/unity/` in the Unity Hub to explore or test the package in action.
-
----
-
-## Input System Compatibility
-
-.Command supports toggling the in-game console with the backquote key (`` ` ``). If you're using Unity's **new Input System**, make sure to:
 
 ---
 
